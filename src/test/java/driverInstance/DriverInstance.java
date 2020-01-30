@@ -21,8 +21,8 @@ public class DriverInstance {
             System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver");
             driver = new ChromeDriver();
         }
-     //   driver.get(config.getString("appURL"));
-        driver.get("https://www.rms.com/");
+        driver.get(config.getString("appURL"));
+     //   driver.get("https://www.rms.com/");
         return driver;
     }
 
